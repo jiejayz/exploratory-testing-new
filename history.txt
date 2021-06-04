@@ -1,0 +1,640 @@
+    1  ls
+    2  pwd
+    3  ls
+    4  dir
+    5  pwd
+    6  ls
+    7  cd..
+    8  ls
+    9  pwd
+   10  cd /
+   11  pwd
+   12  ls
+   13  cd ~
+   14  pwd
+   15  cd /usr/local/bin
+   16  ls
+   17  pwd
+   18  ls
+   19  cd repos
+   20  ls
+   21  mkdir tomcat-ami
+   22  cd tomcat-ami
+   23  ls
+   24  cp /mnt/c/Users/Jay/Downloads/tomcat-ami-files.zip .
+   25  unzip tomcat-ami-files.zip tomcat-ami-files.zip 
+   26  ls
+   27  unzip tomcat-ami-files.zip
+   28  ls
+   29  rm *.zip
+   30  ls
+   31  cat ami.json | more
+   32  vi ami.json 
+   33  cat ami.json | more
+   34  which packer
+   35  cd /usr/local/bin
+   36  ls
+   37  packer --version
+   38  packer -version
+   39  packer validate ami.json
+   40  cd ~
+   41  pwdd
+   42  pwd
+   43  ls
+   44  cd repos
+   45  ls
+   46  cd tomcat-ami
+   47  ls
+   48  packer validate ami.json
+   49  packer build ami.json
+   50  ls
+   51  cd ..
+   52  ls
+   53  mkdir package-class
+   54  cd package-class
+   55  ls
+   56  echo "# package-class" >> README.md
+   57  git init
+   58  git add README.md
+   59  git commit -m "first commit"
+   60  git branch -M main
+   61  git remote add origin git@github.com:jiejayz/package-class.git
+   62  git push -u origin main
+   63  ssh-keygen -t rsa -f ~/.ssh/id_rsa-package_job_class
+   64  eval "$(ssh-agent -s)"
+   65  ssh-add ~/.ssh/id_rsa-package_job_class
+   66  cat ~/.ssh/id_rsa-package_job_class.pub
+   67  git push -u origin main
+   68  cp /mnt/c/Users/Jay/Downloads/package-master.zip .
+   69  ls
+   70  unzip package-master.zip 
+   71  ls
+   72  mv -r package-master/* .
+   73  mv package-master/* .
+   74  ls
+   75  rmdir package-master/
+   76  ls
+   77  s
+   78  ls
+   79  rm *.zip
+   80  ls
+   81  vi Jenkinsfile 
+   82  ls
+   83  vi ami.json 
+   84  git add .
+   85  git push
+   86  git commit -m "Add Package Repo"
+   87  git push
+   88  pwd
+   89  ls
+   90  pwd
+   91  cd ~
+   92  ls
+   93  cd repos
+   94  ls
+   95  cd ..
+   96  ls
+   97  pwd
+   98  ls
+   99  cd repos
+  100  ls
+  101  cd class-java-app
+  102  ls
+  103  vi Jenkinsfile 
+  104  ls
+  105  vi pom.xml 
+  106  cear
+  107  clear
+  108  git add *
+  109  ls
+  110  git commit -m "java-app files"
+  111  git push
+  112  clear
+  113  pwdd
+  114  pwd
+  115  ls
+  116  cd ..
+  117  ls
+  118  cd tomcat-ami/
+  119  ls
+  120  vi ami.json
+  121  which paccker
+  122  which packer
+  123  packer validate ami.ason
+  124  packer validate ami.json
+  125  packer build ami.json
+  126  cd ..
+  127  pwdd
+  128  pwd
+  129  ls
+  130  cd package-class
+  131  ls
+  132  vi Jenkinsfile 
+  133  vi ami.json 
+  134  git add .
+  135  git push
+  136  git commit -m "Add Package Repo"
+  137  git push
+  138  ls
+  139  grep ochoa *
+  140  vi Jenkinsfile
+  141  which packer
+  142  cd /usr/local/bin
+  143  ls
+  144  cd ~
+  145  ls
+  146  paccker
+  147  packer
+  148  packer --version
+  149  pwd
+  150  ls
+  151  cd downloads/
+  152  ls
+  153  cp /mnt/c/Users/Jay/Downloads/terraform_0_14.4_linux_amd64.zip .
+  154  cp /mnt/c/Users/Jay/Downloads/terraform_0.14.4_linux_amd64.zip .
+  155  ls
+  156  unzip terraform_0.14.4_linux_amd64.zip 
+  157  ls
+  158  sudo mv terraform /usr/local/bin/
+  159  cd /usr/local/bin
+  160  ls
+  161  cd ~
+  162  ls
+  163  cd dowwnlods
+  164  cd downloads
+  165  ls
+  166  sudo mv terraform /usr/local/bin/
+  167  ls
+  168  cd /usr/local/bin
+  169  ls
+  170  terraform --version
+  171  cd ~
+  172  ls
+  173  cd repos
+  174  ls
+  175  mkdir exploratory-testing
+  176  cd exploratory-testing/
+  177  ls
+  178  cp /mnt/c/Users/Jay/Downloads/exploratory-testing-master.zip .
+  179  unzip exploratory-testing-master.zip exploratory-testing-master.zip 
+  180  unzip exploratory-testing-master.zip
+  181  ls
+  182  cd exploratory-testing-master/
+  183  ls
+  184  mv * ..
+  185  ls
+  186  cd ..
+  187  ls
+  188  rm *.zip
+  189  ls
+  190  rm -r exploratory-testing-master/
+  191  ls
+  192  cd infrastructure/
+  193  ls
+  194  vi terraform.tfvars
+  195  ls
+  196  terraform init
+  197  terraform plan
+  198  cd ..
+  199  ls
+  200  vin Jenkinsfile 
+  201  vi Jenkinsfile 
+  202  cd ~
+  203  cd repos
+  204  ls
+  205  echo "# exploratory-testing" >> README.md
+  206  ls
+  207  rm *.md
+  208  ls
+  209  cd exploratory-testing/
+  210  ls
+  211  echo "# exploratory-testing" >> README.md
+  212  git init
+  213  git add README.md
+  214  git commit -m "first commit"
+  215  git branch -M main
+  216  git remote add origin git@github.com:jiejayz/exploratory-testing.git
+  217  git push -u origin main
+  218  ssh-keygen -t rsa -f ~/.ssh/id_rsa-exploratory-testing
+  219  eval "$(ssh-agent -s)"
+  220  ssh-add ~/.ssh/id_rsa-exploratory-testing
+  221  pwd
+  222  cat /home/jie/.ssh/id_rsa-exploratory-testing.pub
+  223  cat /home/jiez/.ssh/id_rsa-exploratory-testing.pub
+  224  pwd
+  225  ls
+  226  git push -u origin main
+  227  ls
+  228  vi Jenkinsfile 
+  229  ls
+  230  git add *
+  231  clear
+  232  git commit -m "exploratory testing files"
+  233  git push
+  234  cd infrastructure/.terraform/
+  235  ls
+  236  cd ..
+  237  ls
+  238  ls -l
+  239  ls -alt
+  240  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  241  cd ..
+  242  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  243  git push
+  244  ls
+  245  vi Jenkinsfile 
+  246  ls -alt
+  247  rm *.swp
+  248  rm .J*.*
+  249  las -alt
+  250  ls -lta
+  251  vi Jenkinsfile 
+  252  ls -alt
+  253  cd infrastructure/
+  254  ls
+  255  ls -
+  256  ls -l
+  257  ls -alt
+  258  cd .terraform/
+  259  ls alt
+  260  ls -alt
+  261  cd providers/registry.terraform.io/
+  262  ls -alt
+  263  cd ..
+  264  ls -alt
+  265  cd ~
+  266  ls -alt
+  267  ls -l
+  268  cd repos
+  269  ls -alt
+  270  mkdir saved
+  271  cd saved
+  272  pwd
+  273  cd ..
+  274  cd exploratory-testing/
+  275  ls 
+  276  cd infrastructure/
+  277  ls
+  278  ls -alt
+  279  mv .terraform.lock.hcl /home/jiez/repos/saved/
+  280  ls -alt
+  281  mv .terraform /home/jiez/repos/saved/
+  282  ls -alt
+  283  cd /home/jiez/repos/saved
+  284  ls -alt
+  285  cd ~
+  286  cd repors
+  287  cd repos
+  288  ls
+  289  cd exploratory-testing/
+  290  git commit -m "updated Jenkinsfile"
+  291  git push
+  292  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  293  git push
+  294  ls -alt
+  295  cd .git
+  296  ls -alt
+  297  cd ..
+  298  ls -alt
+  299  grep terraform . | more
+  300  grep terraform * | more
+  301  exit
+  302  pwd
+  303  cd repos
+  304  ls
+  305  cd exploratory-testing/
+  306  ls -alt
+  307  git push
+  308  history | more
+  309  ssh-keygen -t rsa -f ~/.ssh/id_rsa-exploratory-testing
+  310  ls -al
+  311  la -alt
+  312  history | more
+  313  223
+  314  cat /home/jiez/.ssh/id_rsa-exploratory-testing.pub
+  315  git push
+  316  exit
+  317  pwd
+  318  cd repos
+  319  ls
+  320  cd exploratory-testing/
+  321  ls -al
+  322  history | more
+  323  git add README.md
+  324  git commit -m "first commit"
+  325  git commit -m "seconnd commit"
+  326  git commit -m "second commit"
+  327  history 
+  328  cat /home/jiez/.ssh/id_rsa-exploratory-testing.pub
+  329  got push
+  330  git push
+  331  history
+  332  grep terraform * | more
+  333  |300
+  334  git push -u origin main
+  335  history
+  336  ssh-keygen -t rsa -f ~/.ssh/id_rsa-exploratory-testing
+  337  eval "$(ssh-agent -s)"
+  338  ssh-add ~/.ssh/id_rsa-exploratory-testing
+  339  cat /home/jiez/.ssh/id_rsa-exploratory-testing.pub
+  340  git push -u origin main
+  341  ls -alt
+  342  cd infrastructure/.terraform/
+  343  ls -alt
+  344  cd ..
+  345  ls -alt
+  346  rm -r .terraform
+  347  ls -alt
+  348  cd ..
+  349  git push -u origin main
+  350  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  351  git push -u origin main
+  352  git push
+  353  ls -alt
+  354  git push
+  355  ls -alt
+  356  cd infrastructure/
+  357  ls -alt
+  358  grep terraform * | more
+  359  grep terraform *.* | more
+  360  cd ..
+  361  ~g
+  362  grep terraform *.* | more
+  363  la -alt
+  364  cd infrastructure/
+  365  ls -alt
+  366  cd .terraform/
+  367  ls -alt
+  368  cd providers/
+  369  ls -alt
+  370  cd registry.terraform.io/
+  371  ls -alt
+  372  cd hashicorp/
+  373  ls -alt
+  374  cd aws
+  375  ls -al
+  376  cd 3.43.0/
+  377  ls -alt
+  378  cd linux_amd64/
+  379  ls -alt
+  380  cd ..
+  381  ls -alt
+  382  ls 
+  383  cd infrastructure/
+  384  ls
+  385  git push
+  386  sudo rm -r .terraform
+  387  ls -alt
+  388  git push
+  389  cd ..
+  390  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  391  git push
+  392  touch .gitignore
+  393  vi .gitignore
+  394  git push
+  395  mv .gitignore infrastructure/
+  396  git push
+  397  pwd
+  398  git status
+  399  git rm --cached -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  400  git push
+  401  git rm --cached -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  402  cd infrastructure/
+  403  cd .terraform/
+  404  cd providers/
+  405  cd registry.terraform.io/
+  406  cd hashicorp/
+  407  cd aws
+  408  cd 3.43.0/
+  409  cd linux_amd64/
+  410  ls -al
+  411  la -alt
+  412  goot status
+  413  git status
+  414  history
+  415  cd ~
+  416  cd repos
+  417  cd exploratory-testing/
+  418  history
+  419  git status
+  420  git rm infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  421  git rm --infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  422  git rm -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  423  pwd
+  424  git rm /home/jiez/repos/exploratory-testing/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  425  cd /home/jiez/repos/exploratory-testing/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/
+  426  ls
+  427  cd linux_amd64/
+  428  ls
+  429  ls -al
+  430  cd ~
+  431  cd repos
+  432  cd exploratory-testing/
+  433  git status
+  434  cd infrastructure/
+  435  ls -alt
+  436  vi .gitignore
+  437  got status
+  438  git status
+  439  git reset HEAD .terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  440  cd ..
+  441  git push
+  442  git status
+  443  git checkout -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  444  git push
+  445  h
+  446  history
+  447  git push -u origin main
+  448  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  449  git push
+  450  history | more
+  451  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  452  git push
+  453  history
+  454  git status
+  455  git rm  -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  456  git rm --cached  -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  457  git rm --cached infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  458  git rm ./infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  459  git rm infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  460  git push
+  461  git rm HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  462  git rm -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  463  git rm infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  464  history
+  465  git rm /home/jiez/repos/exploratory-testing/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  466  cd /home/jiez/repos/exploratory-testing/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/
+  467  cd infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/
+  468  cd infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/
+  469  cd infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws
+  470  cd infrastructure/.terraform/providers/registry.terraform.io/hashicorp
+  471  cd infrastructure/.terraform/providers/registry.terraform.io
+  472  cd infrastructure/.terraform/providers
+  473  cd infrastructure/.terraform
+  474  cd infrastructure
+  475  ls
+  476  ls -alt
+  477  rm .gitignore
+  478  ls -al
+  479  ls -alt
+  480  cd ..
+  481  ls
+  482  cd ..
+  483  cd sved
+  484  cd saved
+  485  ls
+  486  ls -alt
+  487  mv .terraform ../exploratory-testing/infrastructure
+  488  cd ..
+  489  cd exploratory-testing/
+  490  cd infrastructure/.terraform/
+  491  ls -alt
+  492  cd ..
+  493  ls -alt
+  494  cd ..
+  495  git rm infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  496  cd infrastructure/
+  497  cd .terraform/
+  498  cd providers/
+  499  cd registry.terraform.io/
+  500  cd hashicorp/
+  501  cd aws
+  502  cd 3.43.0/
+  503  cd linux_amd64/
+  504  ls -alt
+  505  cd ~
+  506  cd repos/
+  507  cd exploratory-testing/
+  508  git rm ~/repos/exploratory-testing/infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  509  git status
+  510  git reset HEAD infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  511  git status
+  512  git push
+  513  git status
+  514  git rm infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  515  git status
+  516  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  517  git status
+  518  git commit -a
+  519  clear
+  520  git checkout HEAD -- infrastructure/.terraform/providers/registry.terraform.io/hashicorp/aws/3.43.0/linux_amd64/terraform-provider-aws_v3.43.0_x5
+  521  git push
+  522  git status
+  523  history | more
+  524  pwd
+  525  cd ..
+  526  ls
+  527  cd exploratory-testing/
+  528  ls
+  529  rm *.*
+  530  ls
+  531  rm *
+  532  cd ..
+  533  ls
+  534  rm -r exploratory-testing/
+  535  y
+  536  ls -al
+  537  mkdir exploratory-testing
+  538  cd exploratory-testing/
+  539  history | more
+  540  cp /mnt/c/Users/Jay/Downloads/exploratory-testing-master.zip .
+  541  unzip exploratory-testing-master.zip 
+  542  ls
+  543  rm *.zip
+  544  ls
+  545  cd ..
+  546  ls
+  547  cd exploratory-testing/
+  548  ls
+  549  cd exploratory-testing-master/
+  550  ls
+  551  mv * ..
+  552  ls -al
+  553  cd ..
+  554  ls
+  555  cd infrastructure/
+  556  ls
+  557  ls -alt
+  558  cd ..
+  559  ls
+  560  rm -r exploratory-testing-master/
+  561  ls -l
+  562  git init
+  563  git add readme.md
+  564  cd ..
+  565  ls
+  566  cd class-java-app/
+  567  ls
+  568  cd ..
+  569  cd exploratory-testing/
+  570  ls
+  571  git add README.md
+  572  git commit -m "first commit"
+  573  git branch -M main
+  574  git remote add origin git@github.com:jiejayz/exploratory-testing.git
+  575  git push -u origin main
+  576  git push
+  577  git pull
+  578  git push -u origin main
+  579  git push --set-upstream origin main
+  580  git push -u origin main
+  581  ls -alt
+  582  cd infrastructure/
+  583  ls -alt
+  584  cd ..
+  585  echo "# exploratory-testing-new" >> README.md
+  586  git init
+  587  git add README.md
+  588  git commit -m "first commit"
+  589  git branch -M main
+  590  git remote add origin git@github.com:jiejayz/exploratory-testing-new.git
+  591  git push -u origin main
+  592  cd ..
+  593  ls -alt
+  594  rm -r exploratory-testing/
+  595  ls -alt
+  596  mkdir exploratory-testing
+  597  cd exploratory-testing/
+  598  cp /mnt/c/Users/Jay/Downloads/exploratory-testing-master.zip .
+  599  ls -alt
+  600  unzip exploratory-testing-master.zip 
+  601  ls -alt
+  602  rm *.zip
+  603  ls
+  604  cd exploratory-testing-master/
+  605  ls -alt
+  606  cd infrastructure/
+  607  ls -alt
+  608  cd ..
+  609  ls
+  610  mv * ..
+  611  ls
+  612  ls -alt
+  613  cd ..
+  614  ls
+  615  rm -fr exploratory-testing-master/
+  616  ls -alt
+  617  echo "# exploratory-testing-new" >> README.md
+  618  git init
+  619  git add README.md
+  620  git commit -m "first commit"
+  621  git branch -M main
+  622  git remote add origin git@github.com:jiejayz/exploratory-testing-new.git
+  623  git push -u origin main
+  624  ssh-keygen -t rsa -f ~/.ssh/id_rsa-exploratory-testing-new
+  625  eval "$(ssh-agent -s)"
+  626  ssh-add ~/.ssh/id_rsa-exploratory-testing-new
+  627  cat ~/.ssh/id_rsa-package_job_class.pub
+  628  cat ~/.ssh/id_rsa-exploratory-testing-new.pub
+  629  git push -u origin main
+  630  git push
+  631  ls -alt
+  632  pwd
+  633  ls
+  634  vi Jenkinsfile 
+  635  git commit -m "updated Jenkinsfile"
+  636  git push
+  637  vi Jenkinsfile 
+  638  git add *
+  639  git push
+  640  history > history.txt
